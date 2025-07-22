@@ -1,5 +1,7 @@
 # Learning Path Generator with Model Context Protocol (MCP)
 
+##Link to access:  https://mcplearning-path-pmd5ixv8ggqpkev7yavrxx.streamlit.app/
+
 This project is a Streamlit-based web application that generates personalized learning paths using the Model Context Protocol (MCP). It integrates with various services including YouTube, Google Drive, and Notion to create comprehensive learning experiences.
 
 ## Features
