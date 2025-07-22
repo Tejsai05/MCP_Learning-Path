@@ -1,12 +1,61 @@
-# AI Learning Path Generator
+# Learning Path Generator with Model Context Protocol (MCP)
 
-This tool automates the creation of personalized educational curricula. It transforms a simple text prompt into a comprehensive, day-by-day learning plan by leveraging a core **Model Context Protocol (MCP)**. This protocol manages the workflow of fetching relevant content from YouTube and using a **Large Language Model (LLM)** for structuring the final plan. The entire course, including notes and resources, is delivered directly to your **Google Drive**.
+This project is a Streamlit-based web application that generates personalized learning paths using the Model Context Protocol (MCP). It integrates with various services including YouTube, Google Drive, and Notion to create comprehensive learning experiences.
 
-### ✨ Key Features
+## Features
 
-* **Prompt-Based:** Simply state what you want to learn and in how many days.
-* **Coherent Planning:** Built around a **Model Context Protocol (MCP)** to ensure a logical and context-aware curriculum.
-* **Dynamic Content:** Fetches relevant, up-to-date video tutorials from **YouTube**.
-* **AI-Powered Structuring:** Uses an **LLM** to generate a day-wise schedule and summary notes.
-* **Organized Delivery:** Creates a new **Google Drive** folder containing all generated materials.
-* **Simple UI:** Built with **Streamlit** for easy interaction.
+- 🎯 Generate personalized learning paths based on your goals
+- 🎥 Integration with YouTube for video content
+- 📁 Google Drive integration for document storage
+- 📝 Notion integration for note-taking and organization
+- 🚀 Real-time progress tracking
+- 🎨 User-friendly Streamlit interface
+
+## Prerequisites
+
+- Python 3.10+
+- Google ai Studio API Key
+- Pipedream URLs for integrations (YouTube and either Drive or Notion)
+
+## Installation
+
+1. Clone the repository:
+
+2. Create and activate a virtual environment:
+
+3. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+## Configuration
+
+Before running the application, you'll need to set up:
+
+1. Google API Key
+2. Pipedream URLs for:
+   - YouTube (required)
+   - Google Drive or Notion (based on your preference)
+
+## Running the Application
+
+To start the application, run:
+```bash
+streamlit run app.py
+```
+
+The application will be available at `http://localhost:8501` by default.
+
+## Usage
+
+1. Enter your Google ai studio API key and Pipedream URLs in the sidebar
+2. Select your preferred secondary tool (Drive or Notion)
+3. Enter your learning goal (e.g., "I want to learn python basics in 3 days")
+4. Click "Generate Learning Path" to create your personalized learning plan
+
+## Project Structure
+
+- `app.py` - Main Streamlit application
+- `utils.py` - Utility functions and helper methods
+- `prompt.py` - Prompt template
+- `requirements.txt` - Project dependencies
